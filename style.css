@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(0, 138, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 138, 255, 1) 0%,
+    rgb(49, 117, 196) 100%
+  );
+  font-family: "Mulish", sans-serif;
+}
+
+.container {
+  height: 50px;
+  display: flex;
+  /* border: 2px solid black; */
+}
+
+
+.container,
+.container * {
+  background-color: whitesmoke;
+}
+
+
+.container .input {
+  height: 50px;
+  width: 0;
+  font-size: large;
+  border: none;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.container.active .input {
+  width: 200px;
+  padding: 0px 10px;
+}
+
+.container .input:focus {
+  outline: none;
+}
+
+
+.container .icon {
+  /* border: 2px solid red; */
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
